@@ -31,7 +31,7 @@ const OurServices = () => {
       ],
       image: "./assets/erection/structural erection home.jpg",
       link: "/erection",
-      color: "indigo",
+      color: "#4f46e5",
     },
     {
       icon: Wrench,
@@ -46,7 +46,7 @@ const OurServices = () => {
       ],
       image: "./assets/fabrication/Metal Fabrication home.webp",
       link: "/fabrication",
-      color: "orange",
+      color: "#f97316",
     },
     {
       icon: Droplets,
@@ -61,7 +61,7 @@ const OurServices = () => {
       ],
       image: "./assets/piping-service/Piping Services home.jpg",
       link: "/piping",
-      color: "blue",
+      color: "#3b82f6",
     },
     {
       icon: Settings,
@@ -76,7 +76,7 @@ const OurServices = () => {
       ],
       image: "./assets/equipment-installation/Equipment Installation home.jpg",
       link: "/equipment",
-      color: "green",
+      color: "#10b981",
     },
     {
       icon: Palette,
@@ -91,7 +91,7 @@ const OurServices = () => {
       ],
       image: "./assets/industrial-painting/Industrial Painting home.jpg",
       link: "/painting",
-      color: "purple",
+      color: "#8b5cf6",
     },
     {
       icon: UserCheck,
@@ -106,7 +106,7 @@ const OurServices = () => {
       ],
       image: "./assets/manpower-supply/manpower-supply home.jpg",
       link: "/manpower",
-      color: "indigo",
+      color: "#4f46e5",
     },
     {
       icon: Truck,
@@ -121,7 +121,7 @@ const OurServices = () => {
       ],
       image: "./assets/equipment-hiring/Equipment hiring home.jpg",
       link: "/hiring",
-      color: "red",
+      color: "#2563EB",
     },
     {
       icon: Zap,
@@ -134,8 +134,7 @@ const OurServices = () => {
         "Assembly & Testing",
         "Quality Assurance",
       ],
-      image:
-        "./assets/cell-element/cell-element.jpg",
+      image: "./assets/cell-element/cell-element.jpg",
       link: "/cell-element",
       color: "#ca8a04",
     },
@@ -168,7 +167,10 @@ const OurServices = () => {
     <div
       id="services"
       style={{
-        padding: "60px 20px",
+        paddingTop: "60px",
+        paddingBottom: "60px",
+        paddingLeft: "20px",
+        paddingRight: "20px",
         marginTop: "50px",
         textAlign: "center",
       }}
@@ -185,7 +187,9 @@ const OurServices = () => {
           backgroundColor: "#4f46e5",
           height: "3px",
           borderRadius: "8px",
-          margin: "0 auto 30px",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: "30px",
           maxWidth: "640px",
         }}
       />
@@ -205,18 +209,21 @@ const OurServices = () => {
 
       <section
         style={{
-          padding: "0 16px",
+          paddingLeft: "16px",
+          paddingRight: "16px",
           maxWidth: "1400px",
-          margin: "0 auto",
+          marginLeft: "auto",
+          marginRight: "auto",
         }}
       >
         {/* Services Grid */}
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
             gap: "32px",
             marginBottom: "80px",
+            justifyContent: "center",
           }}
         >
           {services.map((service, index) => (
@@ -228,6 +235,7 @@ const OurServices = () => {
                 borderRadius: "12px",
                 overflow: "hidden",
                 transition: "0.3s",
+                textAlign: "left",
               }}
             >
               <figure style={{ height: "200px", overflow: "hidden" }}>
@@ -291,7 +299,10 @@ const OurServices = () => {
                   {service.features.map((feature, idx) => (
                     <div
                       key={idx}
-                      style={{ display: "flex", alignItems: "center" }}
+                      style={{
+                        display: "flex",
+                        alignItems: "flex-start",
+                      }}
                     >
                       <div
                         style={{
@@ -300,8 +311,9 @@ const OurServices = () => {
                           borderRadius: "50%",
                           backgroundColor: service.color,
                           marginRight: "8px",
+                          marginTop: "4px",
                         }}
-                      ></div>
+                      />
                       <span style={{ fontSize: "12px", color: "#6b7280" }}>
                         {feature}
                       </span>
@@ -315,7 +327,7 @@ const OurServices = () => {
                       backgroundColor: service.color,
                       color: "#fff",
                       padding: "8px 16px",
-                      borderRadius: "8px",
+                      borderRadius: "999px",
                       fontSize: "0.85rem",
                       display: "flex",
                       alignItems: "center",
@@ -323,7 +335,7 @@ const OurServices = () => {
                       transition: "0.3s",
                     }}
                   >
-                    Learn More
+                    Know More
                     <ArrowRight
                       style={{
                         width: "12px",
@@ -353,7 +365,10 @@ const OurServices = () => {
                 background: "#fff",
                 borderRadius: "12px",
                 boxShadow: "0 4px 16px rgba(0,0,0,0.05)",
-                padding: "32px 24px",
+                paddingTop: "32px",
+                paddingBottom: "32px",
+                paddingLeft: "24px",
+                paddingRight: "24px",
                 textAlign: "center",
               }}
             >

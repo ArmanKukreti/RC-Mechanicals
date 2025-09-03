@@ -23,24 +23,21 @@ const Hiring = () => {
 
   const equipment = [
     {
-      title: "Crane Hiring Services - Farana, Hydra & All Terrain Cranes",
-      description: "Mobile cranes, tower cranes, and lifting equipment",
-      image:
-        "./assets/equipment-hiring/crane.jpeg",
+      title: "Crane Hiring Services - Hydra, Farana & All Terrain Cranes",
+      description: "Mobile cranes and lifting equipment",
+      image: "./assets/equipment-hiring/crane.jpeg",
       capacity: "Up to 500 tons",
     },
     {
       title: "Excavators & Loaders",
       description: "Heavy earthmoving and material handling equipment",
-      image:
-        "./assets/equipment-hiring/excavator.jpg",
+      image: "./assets/equipment-hiring/excavator.jpg",
       capacity: "Various sizes",
     },
     {
       title: "Welding Equipment",
       description: "Professional welding machines and accessories",
-      image:
-        "./assets/equipment-hiring/welding.jpg",
+      image: "./assets/equipment-hiring/welding.jpg",
       capacity: "All processes",
     },
   ];
@@ -53,7 +50,7 @@ const Hiring = () => {
     <div className="bg-white" style={{ paddingTop: "5rem" }}>
       {/* Hero Section */}
       <section
-        className="bg-gradient-to-br from-red-600 to-orange-600 text-white"
+        className="bg-gradient-to-br from-blue-600 to-indigo-600 text-white"
         style={{ padding: "5rem 0" }}
       >
         <div
@@ -87,7 +84,7 @@ const Hiring = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors flex items-center justify-center"
+                  className="bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center"
                   style={{ padding: "12px 32px" }}
                 >
                   Get Quote
@@ -98,7 +95,7 @@ const Hiring = () => {
                 </Link>
                 <Link
                   to="/gallery"
-                  className="border-2 border-white text-white rounded-lg hover:bg-white hover:text-red-600 transition-colors text-center"
+                  className="border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors text-center"
                   style={{ padding: "12px 32px" }}
                 >
                   View Equipment
@@ -127,7 +124,7 @@ const Hiring = () => {
               className="text-3xl lg:text-4xl font-bold text-neutral"
               style={{ marginBottom: "1.5rem" }}
             >
-              Equipment <span className="text-red-600">Rental</span>
+              Equipment <span className="text-blue-600">Rental</span>
             </h2>
             <p
               className="text-lg text-neutral/70 max-w-3xl"
@@ -150,7 +147,7 @@ const Hiring = () => {
                   style={{ marginBottom: "0.75rem" }}
                 >
                   <CheckCircle
-                    className="h-5 w-5 text-red-600 flex-shrink-0"
+                    className="h-5 w-5 text-blue-600 flex-shrink-0"
                     style={{ marginRight: "0.75rem" }}
                   />
                   <h4 className="font-bold text-neutral">{service}</h4>
@@ -172,7 +169,7 @@ const Hiring = () => {
               className="text-3xl lg:text-4xl font-bold text-neutral"
               style={{ marginBottom: "1.5rem" }}
             >
-              Available <span className="text-red-600">Equipment</span>
+              Available <span className="text-blue-600">Equipment</span>
             </h2>
             <p className="text-lg text-neutral/70">
               Wide range of equipment available for rent with flexible terms.
@@ -204,10 +201,10 @@ const Hiring = () => {
                     {item.description}
                   </p>
                   <div
-                    className="bg-red-600/10 rounded-lg text-center"
+                    className="bg-blue-100 rounded-lg text-center"
                     style={{ padding: "0.5rem" }}
                   >
-                    <span className="text-sm font-medium text-red-600">
+                    <span className="text-sm font-medium text-blue-600">
                       {item.capacity}
                     </span>
                   </div>
@@ -247,14 +244,14 @@ const Hiring = () => {
             ].map((feature, index) => (
               <div key={index} className="text-center">
                 <div
-                  className="bg-red-600/10 w-20 h-20 rounded-full flex items-center justify-center"
+                  className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center"
                   style={{
                     marginBottom: "1.5rem",
                     marginLeft: "auto",
                     marginRight: "auto",
                   }}
                 >
-                  <feature.icon className="h-10 w-10 text-red-600" />
+                  <feature.icon className="h-10 w-10 text-blue-600" />
                 </div>
                 <h3
                   className="text-xl font-bold text-neutral"

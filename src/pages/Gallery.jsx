@@ -271,14 +271,13 @@ const Gallery = () => {
 
             <div style={{ padding: "1.5rem" }}>
               <div
-                className="flex items-center justify-between"
-                style={{ marginBottom: "1rem" }}
+                style={{ marginBottom: "0.2rem" }}
               >
                 <h3 className="text-2xl font-bold text-neutral">
                   {filteredProjects[selectedImage].title}
                 </h3>
-
-                <div className="flex flex-wrap justify-end gap-2">
+              </div>
+              <div className="flex flex-wrap justify-start gap-2" style={{ marginBottom: "0.5rem" }}>
                   {filteredProjects[selectedImage].category.map((cat) => (
                     <span
                       className={`px-3 py-1 rounded-full text-sm text-white ${
@@ -302,7 +301,6 @@ const Gallery = () => {
                     </span>
                   ))}
                 </div>
-              </div>
               <p className="text-neutral/70">
                 {filteredProjects[selectedImage].description}
               </p>
